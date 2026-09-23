@@ -69,7 +69,7 @@ export function PlantCare() {
                 Your garden
               </div>
             </div>
-            <div className="absolute left-1/2 top-[46px] h-[192px] w-[144px] -translate-x-1/2 overflow-hidden rounded-[28px]">
+            <div className="absolute left-1/2 top-[46px] h-[192px] w-[192px] -translate-x-1/2 overflow-hidden rounded-[28px]">
               <img
                 src="/__mockup/images/bloom-home-spathiphyllum.png"
                 alt="Healthy spathiphyllum plant"
