@@ -1,5 +1,4 @@
 import './fonts.css';
-import asset0 from "./assets/mob-22-monstera.png";
 
 import React, { useState } from 'react';
 import {
@@ -80,8 +79,8 @@ export function PlantCare() {
             </div>
             <div className="absolute -bottom-8 -right-2 h-[238px] w-[190px] overflow-hidden rounded-[50%]">
               <img
-                src={asset0}
-                alt="Healthy monstera plant"
+                src="/__mockup/images/bloom-home-spathiphyllum.png"
+                alt="Healthy spathiphyllum plant"
                 className="h-full w-full object-cover object-[54%_center] mix-blend-multiply"
               />
             </div>
@@ -106,7 +105,7 @@ export function PlantCare() {
                 <div className="min-w-0 flex-1">
                   <div className="flex items-start justify-between gap-2">
                     <div>
-                      <p className="text-[14px] font-bold text-[#214534]">Water Monstera</p>
+                      <p className="text-[14px] font-bold text-[#214534]">Water Spathiphyllum</p>
                       <p className="mt-1 text-[11px] font-medium text-[#8b9d91]">About 200 ml · Today</p>
                     </div>
                     <span className="rounded-full bg-[#fff2d8] px-2.5 py-1 text-[10px] font-bold text-[#b07a2c]">
