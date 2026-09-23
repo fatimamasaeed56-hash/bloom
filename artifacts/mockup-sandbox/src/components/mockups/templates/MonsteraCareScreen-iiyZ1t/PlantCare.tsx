@@ -61,11 +61,6 @@ export function PlantCare() {
             <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#769080]">
               Wednesday, September 23
             </p>
-            <h1 className="font-['Fraunces'] text-[34px] leading-[1.07] tracking-[-0.04em] text-[#183a2d]">
-              Good morning,
-              <br />
-              Maya.
-            </h1>
           </section>
 
           <section className="relative mb-5 min-h-[214px] overflow-hidden rounded-[30px] bg-[#dce9c7] p-5 shadow-[0_18px_34px_rgba(58,95,48,0.12)]">
