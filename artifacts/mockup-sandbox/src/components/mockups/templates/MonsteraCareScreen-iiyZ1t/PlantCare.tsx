@@ -14,6 +14,8 @@ import {
   Search,
   Sprout,
   Sun,
+  Thermometer,
+  Wind,
 } from 'lucide-react';
 
 export function PlantCare() {
@@ -87,6 +89,38 @@ export function PlantCare() {
               <p className="mt-3 max-w-[250px] text-[12px] font-medium leading-relaxed text-[#5b7658]">
                 Keep your plants happy, one simple ritual at a time.
               </p>
+            </div>
+          </section>
+
+          <section className="mb-6">
+            <div className="mb-3 flex items-center justify-between">
+              <h2 className="font-['Fraunces'] text-[21px] font-semibold tracking-[-0.03em] text-[#1d4031]">
+                Plant conditions
+              </h2>
+              <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#8aa092]">Ideal range</span>
+            </div>
+            <div className="grid grid-cols-3 gap-2.5">
+              <div className="rounded-[20px] border border-[#e6eee1] bg-white p-3 shadow-[0_10px_24px_rgba(43,79,53,0.05)]">
+                <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-xl bg-[#fff1d8] text-[#c48a3d]">
+                  <Sun className="h-4 w-4" strokeWidth={2} />
+                </div>
+                <p className="text-[10px] font-bold uppercase tracking-[0.11em] text-[#8a9b90]">Light</p>
+                <p className="mt-1 text-[11px] font-bold leading-[1.2] text-[#315543]">Bright<br />Indirect</p>
+              </div>
+              <div className="rounded-[20px] border border-[#e6eee1] bg-white p-3 shadow-[0_10px_24px_rgba(43,79,53,0.05)]">
+                <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-xl bg-[#f8e3e0] text-[#c8736a]">
+                  <Thermometer className="h-4 w-4" strokeWidth={2} />
+                </div>
+                <p className="text-[10px] font-bold uppercase tracking-[0.11em] text-[#8a9b90]">Temperature</p>
+                <p className="mt-1 text-[11px] font-bold leading-[1.2] text-[#315543]">65–85°F</p>
+              </div>
+              <div className="rounded-[20px] border border-[#e6eee1] bg-white p-3 shadow-[0_10px_24px_rgba(43,79,53,0.05)]">
+                <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-xl bg-[#e1eff0] text-[#5d9ca2]">
+                  <Wind className="h-4 w-4" strokeWidth={2} />
+                </div>
+                <p className="text-[10px] font-bold uppercase tracking-[0.11em] text-[#8a9b90]">Humidity</p>
+                <p className="mt-1 text-[11px] font-bold leading-[1.2] text-[#315543]">60%+</p>
+              </div>
             </div>
           </section>
 
