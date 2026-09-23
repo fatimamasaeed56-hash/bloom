@@ -62,29 +62,31 @@ export function PlantCare() {
             </p>
           </section>
 
-          <section className="relative mb-5 min-h-[214px] overflow-hidden rounded-[30px] bg-[#dce9c7] p-5 shadow-[0_18px_34px_rgba(58,95,48,0.12)]">
-            <div className="relative z-10 max-w-[52%]">
-              <div className="mb-5 inline-flex items-center gap-1.5 rounded-full bg-white/70 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.14em] text-[#52704b]">
+          <section className="relative mb-5 min-h-[356px] overflow-hidden rounded-[30px] bg-[#dce9c7] p-5 shadow-[0_18px_34px_rgba(58,95,48,0.12)]">
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-1.5 rounded-full bg-white/70 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.14em] text-[#52704b]">
                 <Sprout className="h-3.5 w-3.5" />
                 Your garden
               </div>
-              <h2 className="font-['Fraunces'] text-[27px] leading-[1.08] tracking-[-0.04em] text-[#244d36]">
-                A little care
-                <br />
-                goes a long way.
-              </h2>
-              <p className="mt-3 text-[12px] font-medium leading-relaxed text-[#5b7658]">
-                Keep your plants happy, one simple ritual at a time.
-              </p>
             </div>
-            <div className="absolute -bottom-8 -right-2 h-[238px] w-[190px] overflow-hidden rounded-[50%]">
+            <div className="absolute left-1/2 top-[52px] h-[180px] w-[154px] -translate-x-1/2 overflow-hidden rounded-[50%]">
               <img
                 src="/__mockup/images/bloom-home-spathiphyllum.png"
                 alt="Healthy spathiphyllum plant"
                 className="h-full w-full object-cover object-[54%_center] mix-blend-multiply"
               />
             </div>
-            <div className="absolute -bottom-9 right-14 h-28 w-28 rounded-full bg-[#b6cf93]/45 blur-2xl" />
+            <div className="absolute left-1/2 top-[144px] h-28 w-28 -translate-x-1/2 rounded-full bg-[#b6cf93]/45 blur-2xl" />
+            <div className="absolute inset-x-5 bottom-5 z-10">
+              <h2 className="font-['Fraunces'] text-[27px] leading-[1.08] tracking-[-0.04em] text-[#244d36]">
+                A little care
+                <br />
+                goes a long way.
+              </h2>
+              <p className="mt-3 max-w-[250px] text-[12px] font-medium leading-relaxed text-[#5b7658]">
+                Keep your plants happy, one simple ritual at a time.
+              </p>
+            </div>
           </section>
 
           <section className="mb-6">
