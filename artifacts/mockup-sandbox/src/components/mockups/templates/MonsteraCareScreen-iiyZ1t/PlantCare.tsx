@@ -5,6 +5,7 @@ import {
   Bell,
   CalendarDays,
   Check,
+  Circle,
   ChevronRight,
   Droplets,
   Home,
@@ -92,7 +93,7 @@ export function PlantCare() {
           <section className="mb-6">
             <div className="mb-3 flex items-center justify-between">
               <h2 className="font-['Fraunces'] text-[21px] font-semibold tracking-[-0.03em] text-[#1d4031]">
-                Today&apos;s care
+                Task schedule
               </h2>
               <button className="flex items-center gap-1 text-[12px] font-bold text-[#63826d]">
                 View all <ChevronRight className="h-3.5 w-3.5" />
@@ -100,32 +101,42 @@ export function PlantCare() {
             </div>
 
             <div className="rounded-[24px] border border-[#e8eee3] bg-white p-4 shadow-[0_12px_30px_rgba(43,79,53,0.06)]">
-              <div className="flex items-start gap-3.5">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#e7f2f4] text-[#5495a1]">
-                  <Droplets className="h-5 w-5" />
+              <div className="mb-3 flex items-center gap-2 px-1">
+                <CalendarDays className="h-4 w-4 text-[#6a8b76]" />
+                <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-[#75907f]">Today</p>
+              </div>
+              <div className="flex items-center gap-3.5 rounded-2xl bg-[#f8fbf5] px-3 py-3">
+                <button
+                  aria-label={watered ? 'Mark watering as due' : 'Mark watering as complete'}
+                  onClick={() => setWatered((value) => !value)}
+                  className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-colors ${
+                    watered ? 'bg-[#2b7655] text-white' : 'border border-[#c9d9c8] bg-white text-transparent'
+                  }`}
+                >
+                  <Check className="h-4 w-4" strokeWidth={2.8} />
+                </button>
+                <div className="min-w-0 flex-1">
+                  <p className={`text-[14px] font-bold ${watered ? 'text-[#72917d] line-through' : 'text-[#214534]'}`}>
+                    Water Spathiphyllum
+                  </p>
+                  <p className="mt-1 text-[11px] font-medium text-[#8b9d91]">About 200 ml</p>
+                </div>
+                <Droplets className="h-5 w-5 shrink-0 text-[#6da7b0]" />
+              </div>
+
+              <div className="mb-3 mt-5 flex items-center gap-2 px-1">
+                <CalendarDays className="h-4 w-4 text-[#a1a992]" />
+                <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-[#929b87]">Tomorrow</p>
+              </div>
+              <div className="flex items-center gap-3.5 rounded-2xl border border-[#edf1e9] px-3 py-3">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#d7e1d4] bg-[#fbfcf9] text-[#c4d0c0]">
+                  <Circle className="h-4 w-4" strokeWidth={1.8} />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <div className="flex items-start justify-between gap-2">
-                    <div>
-                      <p className="text-[14px] font-bold text-[#214534]">Water Spathiphyllum</p>
-                      <p className="mt-1 text-[11px] font-medium text-[#8b9d91]">About 200 ml · Today</p>
-                    </div>
-                    <span className="rounded-full bg-[#fff2d8] px-2.5 py-1 text-[10px] font-bold text-[#b07a2c]">
-                      {watered ? 'Done' : 'Due'}
-                    </span>
-                  </div>
-                  <button
-                    onClick={() => setWatered((value) => !value)}
-                    className={`mt-4 flex w-full items-center justify-center gap-2 rounded-xl py-3 text-[12px] font-bold transition-all active:scale-[0.98] ${
-                      watered
-                        ? 'bg-[#eaf3e3] text-[#397052]'
-                        : 'bg-[#2b7655] text-white shadow-[0_8px_18px_rgba(43,118,85,0.18)]'
-                    }`}
-                  >
-                    <Check className="h-4 w-4" strokeWidth={2.7} />
-                    {watered ? 'Marked as watered' : 'Mark as watered'}
-                  </button>
+                  <p className="text-[14px] font-bold text-[#365646]">Check soil moisture</p>
+                  <p className="mt-1 text-[11px] font-medium text-[#9aa99d]">Before watering</p>
                 </div>
+                <Droplets className="h-5 w-5 shrink-0 text-[#b8c7bd]" />
               </div>
             </div>
           </section>
